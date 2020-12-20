@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".HomeActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnDoniraj"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/mybutton"
+            android:text="Донирај"
+            android:textColor="#FFF"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <Button
+            android:id="@+id/btnPomogni"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/mybutton"
+            android:text="Помогни"
+            android:textColor="#FFF"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/btnDoniraj"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="@+id/btnDoniraj"
+            app:layout_constraintTop_toBottomOf="@+id/btnDoniraj" />
+
+        <Button
+            android:id="@+id/btnStatistika"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/mybutton"
+            android:text="Статистика"
+            android:textColor="#FFF"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnPomogni" />
+
+        <Button
+            android:id="@+id/btnKontakt"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/mybutton"
+            android:text="Контакт"
+            android:textColor="#FFF"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/btnStatistika"
+            app:layout_constraintStart_toStartOf="@+id/btnStatistika"
+            app:layout_constraintTop_toBottomOf="@+id/btnStatistika" />
+
+        <Button
+            android:id="@+id/btnZaNas"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="За нас"
+            android:background="@drawable/mybutton"
+            android:textColor="#FFF"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/btnKontakt"
+            app:layout_constraintStart_toStartOf="@+id/btnKontakt"
+            app:layout_constraintTop_toBottomOf="@+id/btnKontakt" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:text="Copyright \u00a9 2020, DIGIT"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/btnZaNas"
+            app:layout_constraintStart_toStartOf="@+id/btnZaNas"
+            app:layout_constraintTop_toBottomOf="@+id/btnZaNas" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

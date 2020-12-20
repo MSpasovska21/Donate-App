@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OblekaActivity"
+    android:background="@drawable/mybackground"
+    android:id="@+id/parent_Volontiraj">
+
+    <TextView
+        android:paddingTop="20dp"
+        android:id="@+id/txtViewVolontiraj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Волонтирај"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/txtViewTekst"
+        android:layout_width="match_parent"
+        android:layout_height="177dp"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="20dp"
+        android:paddingTop="60dp"
+        android:paddingRight="20dp"
+        android:text="Твоите вештини, време и креативни размислување се твоите супермоќи. Употреби ги со цел да помогнеш на некој мал бизнис или организација. Развиј се себе си и другите."
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="180dp">
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/txtViewTekst"
+            android:columnCount="1"
+            android:rowCount="1">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="500dp"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/card1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-10dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <EditText
+                        android:id="@+id/editTextImePrezime"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:hint="Име и презиме"
+                        android:layout_centerHorizontal="true"/>
+
+                    <EditText
+                        android:id="@+id/editTextMeil"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:hint="Меил"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/editTextImePrezime"
+                        android:layout_marginTop="30dp"/>
+
+                    <EditText
+                        android:id="@+id/editTextOpstina"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:hint="Општина"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/editTextMeil"
+                        android:layout_marginTop="30dp"/>
+
+                    <EditText
+                        android:id="@+id/editTextPoraka"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:hint="Порака"
+                        android:lines="5"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/editTextOpstina"
+                        android:layout_marginTop="30dp"/>
+
+
+                    <Button
+                        android:id="@+id/btnPrijaviSe"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/editTextPoraka"
+                        android:layout_marginTop="60dp"
+                        android:layout_marginStart="150dp"
+                        android:text="Пријави се"
+                        android:textSize="20dp"
+                        android:textColor="#fff"
+                        android:background="@drawable/mybutton"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </GridLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

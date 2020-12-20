@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OblekaActivity"
+    android:background="@drawable/mybackground"
+    android:id="@+id/parent_Kontakt">
+
+    <TextView
+        android:paddingTop="50dp"
+        android:id="@+id/txtViewRezultati"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Досега постигнато"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="40dp"/>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="150dp">
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/txtViewTekst"
+            android:columnCount="1"
+            android:rowCount="1">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card1_Stats"
+                android:layout_width="wrap_content"
+                android:layout_height="500dp"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/card1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-10dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/num1"
+                        android:layout_width="200dp"
+                        android:layout_height="80dp"
+                        android:text="232+"
+                        android:textColor="#f00"
+                        android:textSize="50dp"
+                        android:gravity="center"
+                        />
+
+                    <TextView
+                        android:id="@+id/donacii"
+                        android:layout_width="220dp"
+                        android:layout_height="80dp"
+                        android:text="донации"
+                        android:textColor="#000"
+                        android:textSize="50dp"
+                        android:gravity="center"
+                        android:layout_below="@+id/num1"
+                        />
+
+                    <TextView
+                        android:id="@+id/num2"
+                        android:layout_width="200dp"
+                        android:layout_height="80dp"
+                        android:text="200+"
+                        android:textColor="#f00"
+                        android:textSize="50dp"
+                        android:gravity="center"
+                        android:layout_below="@+id/donacii"
+                        />
+
+                    <TextView
+                        android:layout_width="240dp"
+                        android:layout_height="80dp"
+                        android:text="донатори"
+                        android:textColor="#000"
+                        android:textSize="50dp"
+                        android:gravity="center"
+                        android:layout_below="@+id/num2"
+                        />
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </GridLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
